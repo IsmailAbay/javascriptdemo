@@ -20,7 +20,7 @@ let input = document.querySelector('input')
 span.style.visibility = 'hidden'
 
 // ul etiketine li etiketlerini dahil eder
-listeOluştur(isimler)
+listeOlustur(isimler)
 
 // arama yap butonu 
 function aramaYap() {
@@ -31,10 +31,10 @@ function aramaYap() {
     else
         span.style.visibility = 'hidden'
         ul.innerHTML = ""
-        listeOluştur(arananİsimler)
+        listeOlustur(arananİsimler)
 }
 
-function listeOluştur(isimler) {
+function listeOlustur(isimler) {
     for (let isim of isimler){
         ul.innerHTML += `<li>${isim}</li>`
     }
